@@ -1,6 +1,8 @@
 # Pathways in CORD-19
 Pathway knowledge extracted from CORD-19 dataset for the fight against COVID-19
 
+*Link to notebook with latest results: https://wikipathways.github.io/cord-19/covid_figure_ocr_ner.nb.html*
+
 ## COVID-19 Open Research Dataset (CORD-19)
 https://pages.semanticscholar.org/coronavirus-research
 
@@ -22,7 +24,7 @@ We then developed an entity recognition pipeline tailored for human gene mention
 ***These 223 pathway figures contain a total of 4841 gene mentions mapping to 1540 unique gene identifiers (NCBI Gene Entrez IDs).***
 
 
-See our [notebook](covid_figure_ocr_ner.nb.html) for more details.
+See our [notebook](https://wikipathways.github.io/cord-19/covid_figure_ocr_ner.nb.html) for more details.
 
 ---
 Numbers last updated March 17, 2020

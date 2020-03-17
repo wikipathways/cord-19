@@ -1,5 +1,5 @@
 ---
-title: "Genes in Pathway Figures from CORD-19 papers"
+title: "Genes in Pathway Figures from CORD-19"
 output: html_notebook
 ---
 ## COVID-19 Open Research Dataset (CORD-19)
@@ -7,13 +7,13 @@ https://pages.semanticscholar.org/coronavirus-research
 
 "In response to the COVID-19 pandemic, the Allen Institute for AI has partnered with leading research groups to prepare and distribute the COVID-19 Open Research Dataset (CORD-19), a free resource of over 29,000 scholarly articles, including over 13,000 with full text, about COVID-19 and the coronavirus family of viruses for use by the global research community."
 
-The PMC set of articles is based on the following query:
-https://www.ncbi.nlm.nih.gov/pmc/?term=%22COVID-19%22+OR+Coronavirus+OR+%22Corona+virus%22+OR+%222019-nCoV%22+OR+%22SARS-CoV%22+OR+%22MERS-CoV%22+OR+%E2%80%9CSevere+Acute+Respiratory+Syndrome%E2%80%9D+OR+%E2%80%9CMiddle+East+Respiratory+Syndrome%E2%80%9D
+The PMC set of articles is based on [this query](https://www.ncbi.nlm.nih.gov/pmc/?term=%22COVID-19%22+OR+Coronavirus+OR+%22Corona+virus%22+OR+%222019-nCoV%22+OR+%22SARS-CoV%22+OR+%22MERS-CoV%22+OR+%E2%80%9CSevere+Acute+Respiratory+Syndrome%E2%80%9D+OR+%E2%80%9CMiddle+East+Respiratory+Syndrome%E2%80%9D).
+
 
 ***In total there are 9996 unique PMCIDs in CORD-19 collection (based on a filtering of the [metedata file](https://ai2-semanticscholar-cord-19.s3-us-west-2.amazonaws.com/2020-03-13/all_sources_metadata_2020-03-13.csv))***
 
 ## Pathway Figure OCR (PFOCR)
-Independently, the WikiPathways team, led by the Pico group at Gladstone has mined pathway figures at PMC from over the past 25 years (1995-2019) using a combination of image queries and machine learning, arriving at a set of 64,643 pathway figure images published and indexed by PMC.  
+Independently, the [WikiPathways team](https://www.wikipathways.org/index.php/WikiPathways:Team), led by the [Pico group](https://profiles.ucsf.edu/alex.pico) at Gladstone has mined pathway figures at PMC from over the past 25 years (1995-2019) using a combination of image queries and machine learning, arriving at a set of 64,643 pathway figure images published and indexed by PMC.  
 
 ```{r, echo=TRUE,message=FALSE}
 cord19.pfocr <- readRDS("cord19_pfocr.rds")
@@ -51,7 +51,8 @@ print(p)
 ```
 
 
-We have perfomed disease enrichment analysis against these figure-based gene sets to characterize their collective functions.
+We have perfomed disease enrichment analysis against these figure-based gene sets to characterize their collective functions. We used the filtered "knowledge" set from [Jensen's Diseases resource](https://diseases.jensenlab.org/Downloads).
+
 ```{r, echo=TRUE,message=FALSE}
 cord19.pfocr.diseases <- readRDS("cord19_pfocr_diseases.rds")
 
@@ -70,4 +71,4 @@ p <- cord19.pfocr.diseases.cnt %>%
   ggtitle("Most common enriched disease terms")
 print(p)
 ```
-Other than overlap with cancer-related signaling pathways, we observe a lot of auto-immune disease hits like Crohn's, RA, Alopecia areata and lupus.
+Other than overlap with cancer-related signaling pathways, we observe a lot of auto-immune disease hits like Crohn's, RA, Alopecia areata and Lupus.

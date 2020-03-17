@@ -3,6 +3,8 @@ Pathway knowledge extracted from CORD-19 dataset for the fight against COVID-19
 
 *Link to notebook with latest results: https://wikipathways.github.io/cord-19/covid_figure_ocr_ner.nb.html*
 
+Important Note: This site is to develop knowledge resources and tools to help tackle the COVID-19 outbreak. **It is NOT a guide to public information.** The content presented here has **NOT** been filtered or reviewed.
+
 ## COVID-19 Open Research Dataset (CORD-19)
 https://pages.semanticscholar.org/coronavirus-research
 

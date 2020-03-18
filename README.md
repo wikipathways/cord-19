@@ -19,7 +19,7 @@ Independently, the [WikiPathways team](https://www.wikipathways.org/index.php/Wi
 
 ***Of the 9996 PMC papers in CORD-19, 199 papers contain a total of 233 pathway figures.***
 
-We then developed an entity recognition pipeline tailored for human gene mentions commonly found in pathway figures. This pipeline involves optical character recognition (OCR) followed by a series of normalizations and tranformations applied to the OCR output while matching against a custom lexicon of human gene symbols. *In addition to the genes we've recognized (as described below) we still have the raw OCR output as a JSON that may be of interest to the NLP community. We have collected the figure titles and captions associated with this set as well.*
+We then developed an entity recognition pipeline tailored for human gene mentions commonly found in pathway figures. This pipeline involves optical character recognition (OCR) followed by a series of normalizations and tranformations applied to the OCR output while matching against a custom lexicon of human gene symbols. *In addition to the genes we've recognized (as described below) we still have the [raw OCR output as a JSON](cord19_raw_ocr.json) that may be of interest to the NLP community. We have collected the figure titles and captions associated with this set as well.*
 
 ***Of the 233 pathway figures, we could identify one or more genes from 223 of them among 190 PMC papers.***
 

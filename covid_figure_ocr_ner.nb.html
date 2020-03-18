@@ -1766,8 +1766,8 @@ summary {
 <pre class="r"><code>cord19.pfocr &lt;- readRDS(&quot;cord19_pfocr.rds&quot;)
 sprintf(&quot;Of the 9996 PMC papers in CORD-19, %i papers contain a total of %i pathway figures.&quot;, length(unique(cord19.pfocr$pmcid)), length(unique(cord19.pfocr$figid)))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiT2YgdGhlIDk5OTYgUE1DIHBhcGVycyBpbiBDT1JELTE5LCAxOTkgcGFwZXJzIGNvbnRhaW4gYSB0b3RhbCBvZiAyMzMgcGF0aHdheSBmaWd1cmVzLlwiXG4ifQ== -->
-<pre><code>[1] &quot;Of the 9996 PMC papers in CORD-19, 199 papers contain a total of 233 pathway figures.&quot;</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiT2YgdGhlIDk5OTYgUE1DIHBhcGVycyBpbiBDT1JELTE5LCAxODkgcGFwZXJzIGNvbnRhaW4gYSB0b3RhbCBvZiAyMjEgcGF0aHdheSBmaWd1cmVzLlwiXG4ifQ== -->
+<pre><code>[1] &quot;Of the 9996 PMC papers in CORD-19, 189 papers contain a total of 221 pathway figures.&quot;</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -1778,8 +1778,8 @@ sprintf(&quot;Of the 9996 PMC papers in CORD-19, %i papers contain a total of %i
 <pre class="r"><code>cord19.pfocr.genes &lt;- readRDS(&quot;cord19_pfocr_genes.rds&quot;)
 sprintf(&quot;Of the  %i pathway figures, we could identify one or more genes from %i of them among %i PMC papers.&quot;, length(unique(cord19.pfocr$figid)), length(unique(cord19.pfocr.genes$figid)), length(unique(cord19.pfocr.genes$pmcid)))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiT2YgdGhlICAyMzMgcGF0aHdheSBmaWd1cmVzLCB3ZSBjb3VsZCBpZGVudGlmeSBvbmUgb3IgbW9yZSBnZW5lcyBmcm9tIDIyMyBvZiB0aGVtIGFtb25nIDE5MCBQTUMgcGFwZXJzLlwiXG4ifQ== -->
-<pre><code>[1] &quot;Of the  233 pathway figures, we could identify one or more genes from 223 of them among 190 PMC papers.&quot;</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiT2YgdGhlICAyMjEgcGF0aHdheSBmaWd1cmVzLCB3ZSBjb3VsZCBpZGVudGlmeSBvbmUgb3IgbW9yZSBnZW5lcyBmcm9tIDIxNiBvZiB0aGVtIGFtb25nIDE4NCBQTUMgcGFwZXJzLlwiXG4ifQ== -->
+<pre><code>[1] &quot;Of the  221 pathway figures, we could identify one or more genes from 216 of them among 184 PMC papers.&quot;</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -1788,8 +1788,8 @@ sprintf(&quot;Of the  %i pathway figures, we could identify one or more genes fr
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3ByaW50ZihcIlRoZXNlICVpIHBhdGh3YXkgZmlndXJlcyBjb250YWluIGEgdG90YWwgb2YgJWkgZ2VuZSBtZW50aW9ucyBtYXBwaW5nIHRvICVpIHVuaXF1ZSBnZW5lIGlkZW50aWZpZXJzIChOQ0JJIEdlbmUgRW50cmV6IElEcykuXCIsIGxlbmd0aCh1bmlxdWUoY29yZDE5LnBmb2NyLmdlbmVzJGZpZ2lkKSksIGxlbmd0aChjb3JkMTkucGZvY3IuZ2VuZXMkc3ltYm9sKSwgbGVuZ3RoKHVuaXF1ZShjb3JkMTkucGZvY3IuZ2VuZXMkZW50cmV6KSkpXG5gYGAifQ== -->
 <pre class="r"><code>sprintf(&quot;These %i pathway figures contain a total of %i gene mentions mapping to %i unique gene identifiers (NCBI Gene Entrez IDs).&quot;, length(unique(cord19.pfocr.genes$figid)), length(cord19.pfocr.genes$symbol), length(unique(cord19.pfocr.genes$entrez)))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiVGhlc2UgMjIzIHBhdGh3YXkgZmlndXJlcyBjb250YWluIGEgdG90YWwgb2YgNDg0MSBnZW5lIG1lbnRpb25zIG1hcHBpbmcgdG8gMTU0MCB1bmlxdWUgZ2VuZSBpZGVudGlmaWVycyAoTkNCSSBHZW5lIEVudHJleiBJRHMpLlwiXG4ifQ== -->
-<pre><code>[1] &quot;These 223 pathway figures contain a total of 4841 gene mentions mapping to 1540 unique gene identifiers (NCBI Gene Entrez IDs).&quot;</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiVGhlc2UgMjE2IHBhdGh3YXkgZmlndXJlcyBjb250YWluIGEgdG90YWwgb2YgNDgxOCBnZW5lIG1lbnRpb25zIG1hcHBpbmcgdG8gMTUyMyB1bmlxdWUgZ2VuZSBpZGVudGlmaWVycyAoTkNCSSBHZW5lIEVudHJleiBJRHMpLlwiXG4ifQ== -->
+<pre><code>[1] &quot;These 216 pathway figures contain a total of 4818 gene mentions mapping to 1523 unique gene identifiers (NCBI Gene Entrez IDs).&quot;</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShkcGx5cilcbmxpYnJhcnkodGlkeXIpXG5saWJyYXJ5KGdncGxvdDIpXG5jb3JkMTkucGZvY3IuZ2VuZXMuY250IDwtIGNvcmQxOS5wZm9jci5nZW5lcyAlPiVcbiAgZ3JvdXBfYnkoaGduY19zeW1ib2wpICU+JVxuICBzdW1tYXJpc2UoY291bnQgPSBuKCkpICU+JVxuICBhcnJhbmdlKGRlc2MoY291bnQpLCBoZ25jX3N5bWJvbCkgXG5cbmNvcmQxOS5wZm9jci5nZW5lcy5jbnQkaGduY19zeW1ib2wgPC0gZmFjdG9yKGNvcmQxOS5wZm9jci5nZW5lcy5jbnQkaGduY19zeW1ib2wsIGxldmVscyA9IGNvcmQxOS5wZm9jci5nZW5lcy5jbnQkaGduY19zeW1ib2wpXG5cbnAgPC0gY29yZDE5LnBmb2NyLmdlbmVzLmNudCAlPiVcbiAgdG9wX24oNDApICU+JVxuICBnZ3Bsb3QoYWVzKGhnbmNfc3ltYm9sLCBjb3VudCkpICsgXG4gIGdlb21fYmFyKGZpbGwgPSBcIiMwMDczQzJGRlwiLCBzdGF0ID0gXCJpZGVudGl0eVwiKSArIFxuICB0aGVtZShheGlzLnRleHQueCA9IGVsZW1lbnRfdGV4dChhbmdsZSA9IDQ1LCBoanVzdCA9IDEpKSArXG4gIGdndGl0bGUoXCJNb3N0IGNvbW1vbiBnZW5lIG1lbnRpb25zXCIpXG5wcmludChwKVxuXG5gYGAifQ== -->
 <pre class="r"><code>library(dplyr)

@@ -23,7 +23,7 @@ We then developed an entity recognition pipeline tailored for human gene mention
 
 ***Of the 221 pathway figures, we could identify one or more genes from 216 of them among 184 PMC papers.***
 
-***These 221 pathway figures contain a total of 4818 gene mentions mapping to 1523 unique gene identifiers (NCBI Gene Entrez IDs).***
+***These 216 pathway figures contain a total of 4818 gene mentions mapping to 1523 unique gene identifiers (NCBI Gene Entrez IDs).***
 
 
 See our [notebook](https://wikipathways.github.io/cord-19/covid_figure_ocr_ner.nb.html) for more details.

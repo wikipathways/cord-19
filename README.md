@@ -30,3 +30,5 @@ See our [notebook](https://wikipathways.github.io/cord-19/covid_figure_ocr_ner.n
 
 ---
 Numbers last updated March 17, 2020
+
+This work is funded by [NIH/NIGMS](https://www.nigms.nih.gov/) R01-GM100039.

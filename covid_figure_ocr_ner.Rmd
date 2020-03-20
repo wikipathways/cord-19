@@ -2,6 +2,9 @@
 title: "Genes in Pathway Figures from CORD-19"
 output: html_notebook
 ---
+Pathway knowledge extracted from CORD-19 dataset for the fight against COVID-19. This work is published under the CC0 waiver to be freely used and redistributed.
+
+Link to repo with more information: https://github.com/wikipathways/cord-19 
 
 Important Note: This notebook is under active development to present knowledge resources and tools to help tackle the COVID-19 outbreak. **It is NOT a guide to public information.** The content presented here has **NOT** been filtered or reviewed.
 
